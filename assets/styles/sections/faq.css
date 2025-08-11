@@ -12,7 +12,7 @@
     content: "";
     width: clamp(1.5rem, 0.546rem + 4.07vw, 2.5rem);
     aspect-ratio: 1;
-    background-image: url("/assets/images/icon-star.svg");
+    background-image: url("../../images/icon-star.svg");
     background-size: contain;
   }
 }
