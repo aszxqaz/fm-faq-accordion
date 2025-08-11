@@ -1,0 +1,19 @@
+:root {
+  --color-purple-950: rgb(48, 21, 52);
+  --color-purple-600: rgb(139, 105, 144);
+  --color-purple-100: rgb(248, 238, 255);
+  --color-violet-600: rgb(173, 40, 235);
+  --color-box-shadow: rgba(80, 0, 118, 0.1);
+}
+
+body {
+  background-color: var(--color-purple-100);
+  color: var(--color-purple-600);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--color-purple-950);
+}

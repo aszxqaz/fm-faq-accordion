@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "WorkSans";
+  src: url("/assets/fonts/WorkSans/WorkSans.woff2") format("woff2-variations");
+  font-weight: 400 600 700;
+}
+
+:root {
+  --font-size-heading-xl: clamp(2rem, 0.57rem + 6.1vw, 3.5rem);
+  --font-size-title-md: clamp(1rem, 0.88rem + 0.51vw, 1.125rem);
+  --font-family-sans: "WorkSans", sans-serif;
+  --font-size-body: clamp(0.875rem, 0.756rem + 0.51vw, 1rem);
+  --line-height-body: 1.5;
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+}
+
+body {
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-body);
+}

@@ -1,0 +1,10 @@
+.heading-xl {
+  font-size: var(--font-size-heading-xl);
+  font-weight: var(--font-weight-bold);
+  line-height: 1.1875;
+}
+
+.title-md {
+  font-size: var(--font-size-title-md);
+  font-weight: var(--font-weight-semibold);
+}

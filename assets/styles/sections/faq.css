@@ -1,0 +1,26 @@
+.faq {
+  --spacing: clamp(1.5rem, 0.546rem + 4.07vw, 2.5rem);
+}
+
+.faq__heading {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding-top: var(--spacing);
+
+  &::before {
+    content: "";
+    width: clamp(1.5rem, 0.546rem + 4.07vw, 2.5rem);
+    aspect-ratio: 1;
+    background-image: url("/assets/images/icon-star.svg");
+    background-size: contain;
+  }
+}
+
+.faq__card {
+  padding-inline: var(--spacing);
+  padding-bottom: calc(var(--spacing) - 1.5rem);
+  background-color: white;
+  box-shadow: 0 32px 56px var(--color-box-shadow);
+  border-radius: clamp(0.5rem, 0.023rem + 2vw, 1rem);
+}

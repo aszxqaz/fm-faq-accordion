@@ -1,0 +1,52 @@
+.accordion-item:not(:last-of-type) {
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-purple-100);
+  }
+}
+
+.accordion-trigger {
+  background: transparent;
+  border-color: transparent;
+  font: inherit;
+  text-align: start;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem;
+  width: 100%;
+
+  &::after {
+    flex-shrink: 0;
+    margin-left: auto;
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    background-image: url("/assets/images/icon-plus.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &:hover,
+  &:focus-visible {
+    color: var(--color-violet-600);
+  }
+}
+
+.accordion-item.active .accordion-trigger {
+  &::after {
+    background-image: url("/assets/images/icon-minus.svg");
+  }
+}
+
+.accordion-header {
+  margin-block: 1.5rem;
+}
+
+.accordion-content > p {
+  padding-bottom: 1.5rem;
+}

@@ -1,0 +1,10 @@
+body {
+  padding-block: 8.125rem;
+
+  @media screen and (min-width: 40em) {
+    padding-block: 0;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+  }
+}
